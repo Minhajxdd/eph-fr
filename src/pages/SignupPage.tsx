@@ -6,7 +6,7 @@ const SignupPage = () => {
   const navigate = useNavigate();
 
   const [form, setForm] = useState<SignupRequest>({
-    fullName: "",
+    full_name: "",
     email: "",
     password: "",
   });
@@ -32,8 +32,8 @@ const SignupPage = () => {
   return (
     <form onSubmit={handleSubmit}>
       <input
-        name="fullName"
-        value={form.fullName}
+        name="full_name"
+        value={form.full_name}
         onChange={handleChange}
         placeholder="Full Name"
         required

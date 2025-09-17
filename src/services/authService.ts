@@ -6,7 +6,7 @@ const API = axios.create({
 });
 
 export interface SignupRequest {
-  fullName: string;
+  full_name: string;
   email: string;
   password: string;
 }
